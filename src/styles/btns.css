@@ -1,0 +1,92 @@
+.btn-main {
+  width: 148px;
+  height: 50px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 0;
+}
+
+.btn-secondary {
+  padding: 11px 22px;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px;
+  text-decoration: 0;
+}
+
+.btn-builder {
+  color: var(--color-white);
+  background-color: var(--color-gray);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 0;
+}
+
+button {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.btn-remove {
+  margin-left: 40px;
+}
+
+.btn-add-option {
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.radion-btn {
+  display: flex;
+}
+
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.filter-btn {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background-color: var(--color-gray);
+}
+
+.sort-by {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-main,
+.btn-secondary,
+.btn-builder,
+.filter-btn {
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--color-gray);
+  opacity: 0.8;
+}
+
+.btn-main:hover,
+.btn-secondary:hover,
+.btn-builder:hover {
+  opacity: 0.8;
+}

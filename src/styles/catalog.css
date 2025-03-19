@@ -1,0 +1,55 @@
+.quiz-cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding: 0 108px;
+  gap: 40px 0;
+}
+
+.quiz-card {
+  width: 266px;
+  height: 161px;
+  background-color: var(--color-white-darker);
+  border-radius: 12px;
+  padding: 28px 27px 16px 27px;
+}
+
+.card-stats {
+  display: flex;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-gray-light);
+}
+
+.title-card {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.description-card {
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+.divider-card {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dfdfdf;
+  color: #dfdfdf;
+}
+
+.btns-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
