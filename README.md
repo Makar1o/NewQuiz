@@ -1,3 +1,7 @@
+### My review
+
+I completed the first level and some of the tasks from the intermediate level, I just didn't expect that immediately upon registration I would be given a test task with a certain deadline, so I didn't have enough time, if necessary I can do a few more tasks.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
