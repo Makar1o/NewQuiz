@@ -54,7 +54,6 @@ const Run = () => {
   }, [id]);
 
   useEffect(() => {
-    // Завантаження відповідей з localStorage при ініціалізації компонента
     const storedAnswers = localStorage.getItem(`answers-${id}`);
     if (storedAnswers) {
       setAnswers(JSON.parse(storedAnswers));

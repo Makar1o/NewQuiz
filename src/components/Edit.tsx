@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import supabase from "../supabaseClient";
 import { Link } from "react-router-dom";
-import useSurveyState from "./useSurveyState"; // Імпортуємо хук
+import useSurveyState from "./useSurveyState";
 
 interface Question {
   id?: number;
@@ -19,9 +19,8 @@ const Edit = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const { answerss, updateAnswer, clearAnswers } = useSurveyState(
     `survey_${id}`
-  ); // Використовуємо хук
+  );
 
-  // Завантажуємо дані з localStorage при завантаженні компонента
   useEffect(() => {
     const storedQuestions = localStorage.getItem("questions");
     if (storedQuestions) {
@@ -78,7 +77,6 @@ const Edit = () => {
     fetchData();
   }, [id]);
 
-  // Функція для оновлення questions в локальному сховищі
   const updateLocalStorage = (updatedQuestions: Question[]) => {
     localStorage.setItem("questions", JSON.stringify(updatedQuestions));
   };
@@ -167,9 +165,8 @@ const Edit = () => {
         }
       }
 
-      // Очищаємо localStorage після збереження
       localStorage.removeItem("questions");
-      clearAnswers(); // Очищаємо відповіді
+      clearAnswers();
 
       alert("Questionnaire updated successfully!");
       navigate("/catalog");

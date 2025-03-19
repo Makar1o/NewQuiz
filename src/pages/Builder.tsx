@@ -17,7 +17,6 @@ const Builder = () => {
   const [description, setDescription] = useState("");
   const [questions, setQuestions] = useState<Question[]>([]);
 
-  // Завантажуємо дані з localStorage при завантаженні компонента
   useEffect(() => {
     const storedName = localStorage.getItem("name");
     const storedDescription = localStorage.getItem("description");
